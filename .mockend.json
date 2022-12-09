@@ -1,5 +1,7 @@
 {
 	"Post": {
+		"userName": { "loremWord": {} },
+		"password": { "regexp": "[a-z][A-Z][0-9]{6,10}" },
 		"cover": {
 			"regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
 		},
