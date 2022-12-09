@@ -30,6 +30,6 @@
 	},
 	"User": {
 		"name": { "string": {} },
-		"password": { "string": { "min": 6, "max": 10 } }
+		"password": { "regexp": "[a-zA-Z0-9]{6,10}" }
 	}
 }
