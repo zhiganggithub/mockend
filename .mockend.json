@@ -29,7 +29,7 @@
 		}
 	},
 	"User": {
-		"name": { "string": {} },
-		"password": { "regexp": "[a-zA-Z0-9]{6,10}" }
+		"name": { "regexp": "[a-z][A-Z]{6}" },
+		"password": { "regexp": "[a-z][A-Z][0-9]{6,10}" }
 	}
 }
