@@ -4,32 +4,21 @@
 			"regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
 		},
 		"title": {
-			"loremWords": {
-				"minLength": 5,
-				"maxLength": 20
-			}
+			"loremWords": { "minLength": 5, "maxLength": 20 }
 		},
-		"body": {
-			"loremParagraphs": {
-				"minLength": 10,
-				"maxLength": 100
-			}
+		"description": {
+			"loremSentences": { "minLength": 100, "maxLength": 200 }
+		},
+		"content": {
+			"loremParagraphs": { "minLength": 10, "maxLength": 100 }
 		},
 		"tag": {
 			"string": ["one", "two", "three"]
 		},
-		"isDraft": {
-			"boolean": {}
-		},
+		"likes": { "int": { "min": 0, "max": 1000000 } },
+		"isDraft": { "boolean": {} },
 		"createdAt": {
-			"dateTime": {
-				"min": "2010-01-01T00:00:00Z",
-				"max": "2020-12-31T23:59:59Z"
-			}
+			"dateTime": { "min": "2022-01-01T00:00:00Z", "max": "2022-12-31T23:59:59Z" }
 		}
-	},
-	"User": {
-		"name": { "regexp": "[a-z][A-Z]{6}" },
-		"password": { "regexp": "[a-z][A-Z][0-9]{6,10}" }
 	}
 }
